@@ -7,6 +7,6 @@ An online tool to convert multiple texts into multiple QR codes in one click.
 ## How to use
 
 - Enter the lines of texts in the input field
-- Decide the size of the QR codes
+- Decide the size of the QR code images
 - Run the encoding
 - Download the zip
