@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+input, button, textarea, select {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+    font: inherit;
+}
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+hr {
+    border: none;
+    height: 100%;
+}

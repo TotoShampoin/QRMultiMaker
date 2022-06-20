@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target": "ES2022"
+    },
+    "typeAcquisition": {
+        "include": [
+            "jquery",
+            "leaflet",
+            "jszip",
+            "jszip-utils",
+        ]
+    }
+}

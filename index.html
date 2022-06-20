@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRMultiMaker</title>
+    <link rel="stylesheet" href="asset/css/default.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body>
+    <header class="head">
+        <h1>QRMultiMaker</h1>
+    </header>
+    <main class="zone">
+        <section class="area zone__area zone__area--small">
+            <div class="area__title">
+                <h2>Texts to encode</h2>
+                <p>0 lines</p>
+            </div>
+            <div class="area__content">
+                <textarea class="text-input" id="url-input" rows="10" placeholder="Texts to encode"></textarea>
+            </div>
+        </section>
+        <section class="area zone__area zone__area--small">
+            <div class="area__title">
+                <h2>Settings</h2>
+            </div>
+            <div class="area__content menu">
+                <div class="menu__item item">
+                    <label class="item__name" for="param-size">Pixel size</label>
+                    <input class="item__value" type="number" name="param-size" id="param-size" value="1" min="1">
+                </div>
+                <div class="menu__item item">
+                    <label class="item__name" for="param-format">Format</label>
+                    <select class="item__value" name="param-format" id="param-format">
+                        <option value="png" selected>.PNG</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+        <section class="area zone__area zone__area--big">
+            <div class="area__title">
+                <h2>Output</h2>
+            </div>
+            <div class="area__buttons button-list">
+                <button class="button" id="run" title="Run">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M16 37.85V9.85L38 23.85ZM19 23.85ZM19 32.4 32.45 23.85 19 15.3Z"/></svg>
+                    <svg id="loading" class="hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" style="--prc: 0;"><circle cx="24" cy="24" r="22" fill="none" stroke-width="4" pathLength="100" stroke-dasharray="100" stroke-dashoffset="calc(100 - var(--prc))" stroke-linecap="round" /></svg>
+                </button>
+                <button class="button" id="download" title="Import parameters">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M24 32.35 14.35 22.7 16.5 20.55 22.5 26.55V8H25.5V26.55L31.5 20.55L33.65 22.7ZM11 40Q9.8 40 8.9 39.1Q8 38.2 8 37V29.85H11V37Q11 37 11 37Q11 37 11 37H37Q37 37 37 37Q37 37 37 37V29.85H40V37Q40 38.2 39.1 39.1Q38.2 40 37 40Z"/></svg>
+                </button>
+            </div>
+        </section>
+    </main>
+    <footer class="foot">
+        <p>TotoShampoin</p>
+        <p>Urbanature</p>
+    </footer>
+    <script src="modules/jquery-3.6.0.slim.min.js"></script>
+    <script src="modules/jszip.min.js"></script>
+    <script src="modules/jszip-utils.min.js"></script>
+    <script src="src/main.js" type="module"></script>
+</body>
+</html>
