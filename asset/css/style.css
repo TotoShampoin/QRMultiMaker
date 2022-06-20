@@ -175,3 +175,16 @@ textarea {
     background: var(--clr-3);
     color: var(--clr-5);
 }
+
+.img-catalog {
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    border-radius: 0;
+}
+.img-catalog img {
+    width: 6rem; height: 6rem;
+    border-radius: .25rem;
+}
