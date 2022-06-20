@@ -36,7 +36,7 @@ on.run = () => {
 }
 
 on.download = async () => {
-    UI.switchProgress(true, "#download-output");
+    UI.switchProgress(true, "#download");
     const zipped = await zip([
         globals.output,
         globals.input,
